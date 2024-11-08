@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Contacts</title>
+</head>
+<body>
+    <h2>All Contacts</h2>
+    <ul>
+        {% for name, phone_no in contacts.items() %}
+        <li>{{ name }}: {{ phone_no }} <a href="{{ url_for('delete_contact', name=name) }}">Delete</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

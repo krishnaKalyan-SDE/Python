@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Contact Book</h1>
+    <nav>
+        <a href="{{ url_for('add_contact') }}">Add Contact</a>
+        <a href="{{ url_for('view_contacts') }}">View Contacts</a>
+        <a href="{{ url_for('update_contact') }}">Update Contact</a>
+        <a href="{{ url_for('search_contact') }}">Search Contact</a>
+    </nav>
+</body>
+</html>
